@@ -1,7 +1,8 @@
-const getNote = require('./notes.js') // file name is define by ./
+const getNoteMessage = require('./notes.js') // file name is define by ./
 var vd = require('validator') // validator is a npm package
+var dt = require('./my_module.js')
 
-var note = getNote("This is an example to export a function from notes.js and call in app.js")
+var note = getNoteMessage("This is an example to export a function from notes.js and call in app.js")
 if (vd.contains("export")) {
     console.log("Find the match")
 } else {
@@ -9,3 +10,4 @@ if (vd.contains("export")) {
 }
 console.log(note)
 console.log(vd.isEmail("shi.shine24@gmail.com"))
+console.log(dt.myDateTime())
