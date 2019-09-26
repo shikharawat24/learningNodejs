@@ -1,8 +1,8 @@
 const fs = require('fs')
 const mdm = require('./my_module')
 
-
 var file = 'file.txt'
+
 fs.open(file, 'w', function (err, file) {
     if (err) throw err;
     console.log('Open file is done!');
