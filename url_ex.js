@@ -15,7 +15,6 @@ http.createServer(function(req, res){
     var q = url.parse(req.url, true);
     var filename = "." + q.pathname;
     console.log(filename)
-
     try{
         if (!fs.existsSync(filename)) {
             var file = html();
