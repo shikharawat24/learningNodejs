@@ -9,7 +9,7 @@ var html = createHTML({
 
 html_file = '1.html'
 
-const getHTML = function HTML(){
+const getHTML = function(){
     fs.writeFile(html_file, html, function(html_file, err){
         if (err) throw err;
         console.log('HTML file is written!')
@@ -17,4 +17,5 @@ const getHTML = function HTML(){
     return html_file;
 }
 
+// export getHTML function()
 module.exports = getHTML
